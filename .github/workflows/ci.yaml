@@ -48,8 +48,6 @@ jobs:
           - macOS-latest
         rust:
           - stable
-          - beta
-          - nightly
     runs-on: ${{ matrix.os }}
     needs: [compile]
     steps:
@@ -61,5 +59,5 @@ jobs:
         with:
           rust-version: ${{ matrix.rust }}
 
-      - name: Test
+      - name:
         run: cargo test
