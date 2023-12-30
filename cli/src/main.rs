@@ -27,11 +27,11 @@ fn main() {
             let problem_cmd = problem.command;
 
             match problem_cmd {
-                Some(ProblemCommands::Init { number }) => {
-                    problem_init(number);
+                Some(ProblemCommands::Init { name }) => {
+                    problem_init(name);
                 }
-                Some(ProblemCommands::Submit { number }) => {
-                    problem_submit(number);
+                Some(ProblemCommands::Submit { name }) => {
+                    problem_submit(name);
                 }
                 None => todo!(),
             }

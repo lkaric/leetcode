@@ -10,6 +10,6 @@ pub struct ProblemArgs {
 
 #[derive(Debug, Subcommand)]
 pub enum ProblemCommands {
-    Init { number: u16 },
-    Submit { number: u16 },
+    Init { name: String },
+    Submit { name: String },
 }
